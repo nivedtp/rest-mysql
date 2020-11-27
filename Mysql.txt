@@ -1,0 +1,42 @@
+mysql> create database employes;
+Query OK, 1 row affected (0.20 sec)
+
+mysql> use employes;
+Database changed
+mysql> create table data (id int not null, f_name varchar(20), l_name varchar(20), age int(20));
+Query OK, 0 rows affected
+
+mysql> show tables;
++--------------------+
+| Tables_in_employes |
++--------------------+
+| data               |
++--------------------+
+1 row in set (0.02 sec)
+
+mysql> insert into data values ('1','nived','tp','22');
+Query OK, 1 row affected (0.22 sec)
+
+mysql> insert into data values ('2','amal','prasad','23');
+Query OK, 1 row affected (0.14 sec)
+
+mysql> insert into data values ('3','swathy','k','21');
+Query OK, 1 row affected (0.17 sec)
+
+mysql> show tables;
++--------------------+
+| Tables_in_employes |
++--------------------+
+| data               |
++--------------------+
+1 row in set (0.13 sec)
+
+mysql> show data;
+mysql> select * from data;
++----+--------+--------+------+
+| id | f_name | l_name | age  |
++----+--------+--------+------+
+|  1 | nived  | tp     |   22 |
+|  2 | amal   | prasad |   23 |
+|  3 | swathy | k      |   21 |
++----+--------+--------+------+
